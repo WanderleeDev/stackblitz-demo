@@ -32,16 +32,16 @@ Headless, signal-based theme manager for Angular 20+.
 - `isDark()` / `isLight()` return false for custom themes (use `resolvedTheme()`).
 - `selectedTheme()` can be `'system'`; `resolvedTheme()` is always the concrete theme applied to the DOM (never `'system'`).
 - `toggle()` switches between `'dark'` and `'light'`. If a custom theme is active, it switches to `'dark'`.
-- Pick ONE convenience service per component. Do not write custom localStorage or direct DOM logic.
+- Pick ONE convenience service per component. Do not write custom localStorage or direct DOM logic. Isolate switcher components (e.g. `<app-theme-toggle>`) instead of injecting theme services directly into `AppComponent`.
 - Use `CoreThemeService` directly only for advanced scenarios (dynamic theme names, custom service wrappers). For standard use, prefer convenience services.
 
 ## References and Guides
 
 For detailed instructions and implementations, see these sub-guides:
 
-- **API Reference & Config options**: [references/api-reference.${MD}](references/api-reference.${MD})
-- **Styling (CSS variables, Tailwind v4, and Pure CSS)**: [references/styling.${MD}](references/styling.${MD})
-- **SSR Hydration & Layout Stability (prevent layout shift)**: [references/ssr-hydration.${MD}](references/ssr-hydration.${MD})
+- **API Reference & Config options**: [references/api-reference.md](references/api-reference.md)
+- **Styling (CSS variables, Tailwind v4, and Pure CSS)**: [references/styling.md](references/styling.md)
+- **SSR Hydration & Layout Stability (prevent layout shift)**: [references/ssr-hydration.md](references/ssr-hydration.md)
 
 ## Component Examples
 

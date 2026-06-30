@@ -16,6 +16,11 @@
           <span class="note">({{ theme.selectedTheme() }})</span>
         }
       </div>
+    } @else {
+      <div class="current-theme skeleton-theme">
+        <span class="dot"></span>
+        <span class="skeleton-text"></span>
+      </div>
     }
   </section>
 
