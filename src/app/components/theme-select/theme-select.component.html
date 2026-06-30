@@ -1,0 +1,14 @@
+@if (theme.isHydrated()) {
+  <label>
+    <span class="label">Tema</span>
+    <select (change)="onChange($event)">
+      @for (t of theme.availableThemes; track t) {
+        <option [value]="t" [selected]="theme.selectedTheme() === t">
+          {{ t }}
+        </option>
+      }
+    </select>
+  </label>
+} @else {
+  <div class="skeleton" aria-hidden="true"></div>
+}

@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { ThemeSelectService } from 'ngx-theme-stack';
-import { AppHeader } from './components/header.component';
-import { ThemeCard } from './components/theme-card.component';
+import { AppHeader } from './components/header/header.component';
+import { ThemeCard } from './components/theme-card/theme-card.component';
 
 @Component({
   selector: 'app-root',
