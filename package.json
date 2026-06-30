@@ -1,12 +1,15 @@
 {
-  "name": "test",
+  "name": "stackblitz-demo",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "ngx-theme-stack:sync": "ng generate ngx-theme-stack:sync --project stackblitz-demo",
+    "prebuild": "pnpm run ngx-theme-stack:sync",
+    "prestart": "pnpm run ngx-theme-stack:sync"
   },
   "private": true,
   "packageManager": "pnpm@11.3.0",
@@ -25,6 +28,7 @@
     "@angular/cli": "^22.0.3",
     "@angular/compiler-cli": "^22.0.0",
     "jsdom": "^28.0.0",
+    "ngx-theme-stack": "3.9.0-next.0",
     "prettier": "^3.8.1",
     "typescript": "~6.0.2",
     "vitest": "^4.0.8"
