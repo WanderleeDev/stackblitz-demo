@@ -8,11 +8,10 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "ngx-theme-stack:sync": "ng generate ngx-theme-stack:sync --project stackblitz-demo",
-    "prebuild": "pnpm run ngx-theme-stack:sync",
-    "prestart": "pnpm run ngx-theme-stack:sync"
+    "prebuild": "npm run ngx-theme-stack:sync",
+    "prestart": "npm run ngx-theme-stack:sync"
   },
   "private": true,
-  "packageManager": "pnpm@11.3.0",
   "dependencies": {
     "@angular/common": "^22.0.0",
     "@angular/compiler": "^22.0.0",
@@ -24,7 +23,7 @@
     "tslib": "^2.3.0"
   },
   "devDependencies": {
-    "@angular/build": "^22.0.3",
+    "@angular/build": "^22.0.4",
     "@angular/cli": "^22.0.3",
     "@angular/compiler-cli": "^22.0.0",
     "jsdom": "^28.0.0",
